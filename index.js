@@ -6,8 +6,9 @@ const path = require("path")
 require("dotenv").config({ path: "./config/.env" });
 app.use(cors(
     {
-        origin:["https://hpvs.vercel.app"],
+        origin:"https://hpvs.vercel.app/",
         withCredentials:true,
+        methods:["GET","POST","PUT","DELETE"]
     }
 
 ));
