@@ -14,7 +14,7 @@ app.use(cors(
 require("./DataBase/conn");
 const URLS = require("./Router/route");
 
-app.use("/api/v1",URLS);
+app.use("/api/v1/",URLS);
 
 
 app.listen(port,()=>{
